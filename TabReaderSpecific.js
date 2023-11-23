@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 
-const targetWord = 'ancient greek'; 
-let synonymsInPriorityOrder = ['modern greek', 'greek', 'socrates', 'censorship'].map(word => word.toLowerCase()); 
+const targetWord = 'ancient greek'; //Target Element Containing Specific word
+let synonymsInPriorityOrder = ['modern greek', 'greek', 'socrates', 'censorship'].map(word => word.toLowerCase()); //Elements that could navigate us to the Target (Synonyms)
 const startUrl = 'https://en.wikipedia.org/wiki/November_23';
 
 async function navigateToPage(page, url) {
